@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameRank</title>
 
+    <!--Add bootstrap to project-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <!-- Font Awesome Icons -->
     <script>
       src="https://kit.fontawesome.com/ddd9b0d572.js"
@@ -14,26 +17,148 @@
 
     <!-- Add CSS  -->
     <link rel="stylesheet" href="CSS/styles.css">
+
 </head>
 
 <body>
-    <section>
-
+    <section class="coloured-section" id="navbar">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="">GameRank</a>
+      
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">New Releases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Editor's Picks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cta">Top Games</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
 
 
     </section>
 
     <section id="title">
         <div>
-            <h1>hello</h1>
+            <center><h1>Main Section</h1></center>
         </div>
     </section>
 
+    <div class="outNow">
+        <center><h1>New Releases</h1></center>
 
+        <div class="row card-group">
+            <div class="card1 col-2">
+                <div class="card-text"></div>
+            </div> 
+            
+            <div class="card2 col-2">
+                <div class="card-image"></div>
+                <div class="card-text"></div>
+            </div>
 
+            <div class="card3 col-2">
+                <div class="card-image"></div>
+                <div class="card-text">
+                </div>
+            </div>
 
+            <div class="card4 col-2">
+                <div class="card-image"></div>
+                <div class="card-text">
+                </div>
+            </div>
 
+            <div class="card5 col-2">
+                <div class="card-image"><img src="" alt=""></div>
+                <div class="card-text">
+                </div>
+            </div>
 
+            <div class="card6 col-2">
+                <div class="card-image"></div>
+                <div class="card-text">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="editorsPicks">
+
+        <center>
+          <h1>Editor's Picks</h1>
+        </center>
+
+        <center><img class=editorimage src="https://helios-i.mashable.com/imagery/articles/03LcnaJN8FGRMeSV6onXTmR/hero-image.fill.size_1248x702.v1614268146.jpg" alt=""></center>
+       
+
+    </section>
+
+    <section id="UpcomingGames">
+        <center><h1>Upcoming Games</h1></center>
+
+        <div class="row card-group">
+            <div class="card1 col-2">
+                <div class="card-text"></div>
+            </div> 
+            
+            <div class="card2 col-2">
+                <div class="card-image"></div>
+                <div class="card-text"></div>
+            </div>
+
+            <div class="card3 col-2">
+                <div class="card-image"></div>
+                <div class="card-text">
+                </div>
+            </div>
+
+            <div class="card4 col-2">
+                <div class="card-image"></div>
+                <div class="card-text">
+                </div>
+            </div>
+
+            <div class="card5 col-2">
+                <div class="card-image"><img src="" alt=""></div>
+                <div class="card-text">
+                </div>
+            </div>
+
+            <div class="card6 col-2">
+                <div class="card-image"></div>
+                <div class="card-text">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ContactMe">
+        <center>
+        
+        </center>
+    </section>
+
+    <!-- Add Javascript -->
     <script>src="index.js"; charset="UTF-8"</script>
 </body>
 </html>
