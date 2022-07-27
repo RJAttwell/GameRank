@@ -96,26 +96,17 @@ path.two {
 
 h1 {
     font-size: 4rem;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
 /* MAIN TITLE SECTION */
 
 #title {
     display: flexbox;
-    height: 93vh;
+    height: 95vh;
+    padding-top: 3.4%;
     background-color: rgb(44, 44, 44);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 30% 15% 7%;
 }
-
-.mainTile{
-    position: relative;
-    bottom: 200px;
-    width: 5%;
-    height: 20vh;
-}
-
 
 a:link{
     text-decoration: none;
@@ -125,16 +116,66 @@ a:hover{
     text-decoration: none;
 }
 
+.box1{
+    background-image: url(https://exputer.com/wp-content/uploads/2022/06/Saints-Row-2022.jpeg);
+    background-size: cover;
+}
+.box2{
+    background-image: url(https://cdn.akamai.steamstatic.com/steam/apps/1294420/capsule_616x353.jpg?t=1654261264);
+    background-size: cover;
+}
+
+.box3{
+    background-image: url(https://cdn2.unrealengine.com/egs-destroyallhumans2reprobed-blackforestgames-g1a-00-1920x1080-eb8cb5212867.jpg);
+    background-size: cover;
+    height: 200px;
+}
+
+
+.box3button, .box1button {
+    margin-top: 40%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    background-color: white;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.box1button{
+    margin-top: 5%;
+}
+
+.box3button:active, .box1button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    .box3button, .box1button {
+        padding: 0.25em 0.75em;
+    }
+}
 /* NAVBAR SECTION */
 
-#navbar .sticky_nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
-    z-index: 99;
-    background-color: rgb(255, 255, 255);
-    margin: 3%;
+.nav-link{
+    margin-right: 15px;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: bold;
+}
+.navbarImage{
+    width: 7%;
 }
 
 /* OUT NOW SECTION */
@@ -180,6 +221,7 @@ a:hover{
 }
 
 .editText{
+    font-family: 'Poppins';
     margin-bottom: 90px;
     color: white;
     font-weight: bold;
@@ -211,6 +253,7 @@ a:hover{
 }
 
 .upcomingText{
+    font-family: 'Poppins';
     position: relative;
     margin-top: 150px;
     color: white;
@@ -225,13 +268,65 @@ a:hover{
     margin: auto;
 }
 
-.github{
-    width: 2%;
+.contactbuttons{
+    position: relative;
+    top: 100px;
 }
 
-/* .github:hover{
-    
-} */
+.contactList {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contactList .contactItem {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.contactList .contactItem a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+}
+
+.contactList .contactItem a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #e6412f;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.contactList .contactItem a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #e6412f;
+}
+
+.contactList .contactItem a:hover {
+    color: #e6412f;
+    box-shadow: 0 0 5px #e6412f;
+    text-shadow: 0 0 5px #e6412f;
+}
+
 
 
 /* CARD 1 */
@@ -256,7 +351,7 @@ a:hover{
 
 
 .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover,
-.card7:hover, .card8:hover, .card9:hover, card10:hover {
+.card7:hover, .card8:hover, .card9:hover, .card10:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
@@ -449,13 +544,77 @@ a:hover{
     margin: 30px;
 }
 
+/* BIG PICTURE SECTION */
+
+#bigPicSection{
+    display: flex;
+    height: 105vh;
+    background-image: url(https://i0.wp.com/news.xbox.com/en-us/wp-content/uploads/sites/2/2022/06/Game_Feature_4_WR_Route_Move-938727d4cb8a45426b1f.jpg?resize=1920%2C1080&ssl=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30% 15% 7%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bigPicText, .bigPicText2{
+        
+        font-weight: bold;
+        color: white;
+        font-family: 'Poppins';
+}
+
+/* VIDEO SECTION */
+
+.video-background-holder {
+    position: relative;
+    background-color: black;
+    height: calc(100vh - 72px);
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-background-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+    position: relative;
+    z-index: 2;
+}
+
+.video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
 /* RETRO GAMES SECTION */
 
 #RetroSection{
     background-color: #e6412f;
     display: flex;
     justify-content: center;
-    height: 1100px;
+    height: 1300px;
     margin-top: -100px;
     padding: 7% 15%;
 }
@@ -464,6 +623,7 @@ a:hover{
     top: 10px;
     font-weight: bold;
     color: white;
+    font-family: 'Poppins';
 }
 
 .retroHeader2{
@@ -476,7 +636,7 @@ a:hover{
 .retroButton{
     height: 100px;
     background-color: #e6412f;
-    margin-top: -100px;
+    margin-top: 30px;
 }
 
 .retrocard1 {
@@ -599,56 +759,3 @@ a:hover{
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-ul li {
-    list-style: none;
-    margin: 0 15px;
-}
-
-ul li a {
-    position: relative;
-    display: block;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 63px;
-    background: #333;
-    border-radius: 50%;
-    font-size: 30px;
-    color: #666;
-    transition: .5s;
-}
-
-ul li a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: #e6412f;
-    transition: .5s;
-    transform: scale(.9);
-    z-index: -1;
-}
-
-ul li a:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #e6412f;
-}
-
-ul li a:hover {
-    color: #e6412f;
-    box-shadow: 0 0 5px #e6412f;
-    text-shadow: 0 0 5px #e6412f;
-}

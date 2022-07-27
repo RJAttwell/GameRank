@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameRank</title>
 
+    <!-- Fav Icon -->
+    <link rel="Icon" type="image/x-icon" href="android-chrome-192x192.png">
+
     <!--Add bootstrap to project-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -28,30 +31,53 @@
 </head>
 
 <body>
-    <section class="coloured-section" id="navbar">
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark flex-nowrap">
+    <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar5">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <span class="navbar-brand w-100"><img src="" alt=""></span>
+    
+    <div class="navbar-collapse collapse w-100 justify-content-center" id="navbar5">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Codeply</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+    </div>
+    <div class="w-100"><!--spacer--></div>
+</nav>
 
 
+  <section id="title">
+    <div class="container py-4">
+      <div class="box1 p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 style="color: white; font-family: 'Poppins';" class="display-5 fw-bold">Saints Row</h1>
+          <p style="color: white; font-weight: bold; text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);" class="col-md-8 fs-4">The hit series returns this August with a brand new installment</p>
+          <button class="box1button btn btn-light btn-lg" type="button">See More</button>
+        </div>
+      </div>
 
-    </section>
-
-    <section id="title">
-        <div class="mainTile">
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="box2 h-100 p-5 text-bg-dark rounded-3">
             
+          </div>
         </div>
 
-        <div>
-
+        <div class="col-md-6">
+          <div class="box3 h-100 p-5 bg-dark rounded-3">
+            <button class="box3button btn btn-light" type="button">See More</button>
+          </div>
         </div>
-        
-        <div>
-
-        </div>
-    </section>
+    </div>
+  </section>
 
   <section id="outNow">
 
@@ -124,6 +150,20 @@
     </div>
 
   </section>
+
+  <div class="video-background-holder">
+  <div class="video-background-overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="NBA 2K23 Michael Jordan Edition.mp4" type="video/mp4">
+    </video>
+  <div class="video-background-content container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <img src="N23_LOGO_SHORT_WHITE.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
 
     <section id="editorsPicks">
 
@@ -238,6 +278,16 @@
 
     </section>
 
+
+<!-- BIG PICTURE SECTION -->
+    <section id="bigPicSection">
+
+      <h1 class="bigPicText">Madden NFL 23</h1>
+      <h2 class="bigPicText2">The hit NFL game series returns August 19 2022</h2>
+      <button class="bigPicButton">Learn More</button>
+      
+    </section>
+
 <!-- RETRO GAMES SECTION -->
     <section id="RetroSection">
 
@@ -314,24 +364,26 @@
     <section id="ContactMe">
 
       <div class="contactbuttons">
-        <ul>
-          <li>
+        <ul class="contactList">
+          <li class="contactItem">
             <a href="#">
               <i class="fa-solid fa-inbox"></i>
             </a>
           </li>
-          <li>
+
+          <li class="contactItem">
             <a href="#">
               <i class="fa-brands fa-youtube"></i>
             </a>
-            </li>
-          <li>
+          </li>
+
+          <li class="contactItem">
             <a href="https://github.com/RJAttwell" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
-            
           </li>
-          <li>
+
+          <li class="contactItem">
             <a href="https://stackoverflow.com/users/17940902/fruity-john" target="_blank">
               <i class="fa-brands fa-stack-overflow"></i>
             </a> 
