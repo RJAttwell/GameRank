@@ -179,6 +179,7 @@ a:hover{
 }
 .navBarImage{
     width: 6%;
+    transform: skewX(-15deg)
 }
 
 /* OUT NOW SECTION */
@@ -212,7 +213,6 @@ a:hover{
 .editorimage {
     max-width: 800px;
     height: auto;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     transition: 0.5s ease;
     cursor: pointer;
    
@@ -220,7 +220,6 @@ a:hover{
 
 .editorimage:hover {
     transform: scale(1.07);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 .editText{
