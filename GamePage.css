@@ -1,0 +1,378 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Montserrat:wght@600&family=Poppins:ital,wght@0,600;0,700;0,800;0,900;1,900&family=Press+Start+2P&family=Roboto&family=Rowdies:wght@300&display=swap");
+
+/* LINKS */
+/* Removes text decoration (underlines) from links */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* NAV BAR SECTION */
+.nav-link {
+  font-family: "Poppins";
+  color: white;
+  font-weight: bold;
+}
+
+.navBarImage {
+  width: 6%;
+}
+
+/* HEADER SECTION */
+#headerSection {
+  display: grid;
+  height: 100vh;
+  background-color: rgb(43, 43, 43);
+  padding: 5% 13% 5%;
+}
+
+.mainTile {
+  width: 1000px;
+  height: 50vh;
+}
+
+.ratingsInfo {
+  display: flex;
+}
+
+.headerTiles {
+  display: flex;
+}
+
+.leftTile {
+  width: 300px;
+  height: 50vh;
+  margin-right: 30px;
+  background-image: url(https://images.g2a.com/1080x1080/1x1x0/red-dead-redemption-2-rockstar-key-global/5da85be37e696c2b755a1612);
+  background-size: cover;
+}
+
+/* CONTENT */
+
+#contentBody {
+  display: flex;
+  height: 250vh;
+  background-color: white;
+  padding: 5% 13% 5%;
+}
+
+.contentBodyLeftSide {
+  margin-right: 5%;
+}
+
+.contentBodyRightSide {
+  margin-left: 10%;
+}
+
+#footer {
+  height: 20vh;
+  background-color: #e6412e;
+}
+
+/* CONTENT LEFT SIDE */
+
+.systemSpec {
+  display: flex;
+}
+
+/* VIDEO SECTION */
+
+.container{
+    justify-content: center;
+}
+
+/* CONTENT RIGHT SIDE */
+
+/* RATINGS BOX */
+
+.ratingBox {
+  height: 17vh;
+  padding: 0% 1% 0% 4%;
+}
+
+.ratingBoxSection1 {
+  display: flex;
+}
+
+.ratingImage {
+  width: 30%;
+  height: 10vh;
+  margin: 5% 5%;
+}
+
+.ratingText {
+  margin: 5% 5%;
+  color: white;
+}
+
+/* LANGUAGES BOX */
+
+.languageBox {
+  height: 65vh;
+  background-color: #e6412e;
+  padding: 2% 2% 3% 3%;
+}
+
+th,
+td {
+  padding: 7px;
+  text-align: center;
+  color: white;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* TAGS BOX */
+.tagsBox {
+  height: 13vh;
+  background-color: #e6412e;
+  padding: 4% 4% 4% 4%;
+}
+
+.popUp {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out,
+    transform 0.25s ease-in-out;
+}
+
+.popupContent {
+  background-color: white;
+  padding: 16px 24px;
+  width: 384px;
+  border-radius: 0.5rem;
+}
+
+.closeButton {
+  float: right;
+  width: 24px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.closeButton:hover {
+  background-color: darkgray;
+}
+
+.show-popUp {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/* REVIEWS SECTION */
+
+#reviewsSection {
+  padding: 5% 13% 5%;
+  display: grid;
+}
+
+.overallReview {
+  display: flex;
+  height: 40vh;
+  border: #e6412e;
+  border-style: solid;
+}
+
+.mainReviewPoints {
+  display: grid;
+  margin: 25px;
+  margin-left: 10%;
+}
+
+.writeReview {
+  margin-left: 20%;
+}
+
+.reviewBtn {
+  margin-top: 40%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: white;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.reviewBtn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .box3button,
+  .box1button,
+  .box2button {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.topUserReviews {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
+
+.reviewCard {
+  margin-right: 2%;
+  margin-top: 3%;
+  width: 45%;
+}
+
+/* MORE LIKE THIS SECTION */
+
+#moreLike {
+  padding: 0% 13% 5%;
+  height: 100vh;
+}
+
+/* CARDS SECTION */
+
+.card1 {
+}
+
+.card2 {
+  height: 65vh;
+  width: 400px;
+  background-image: url(https://d2x08bnoa3twn6.cloudfront.net/wp-content/uploads/2016/10/theVideoGameGallery_19740_1525x1887.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card3 {
+  height: 65vh;
+  width: 400px;
+  background-image: url(https://static.wikia.nocookie.net/gtawiki/images/7/76/CoverArt-GTAV.png/revision/latest?cb=20220111185712);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* FOOTER SECTION */
+
+:root {
+  --bg: #dcdde1;
+  --color-icon: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.socialButtons {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6412e;
+}
+
+.icon-list {
+  width: 50%;
+  max-width: 25rem;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.icon-item {
+  list-style: none;
+}
+
+.icon-link {
+  display: inline-flex;
+  font-size: 2rem;
+  color: var(--color-icon);
+  width: 4rem;
+  height: 4rem;
+  transition: 0.5s linear;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+
+.icon-link:hover {
+  color: #fff;
+}
+
+.icon-link i {
+  margin: auto;
+}
+
+.icon-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 4rem;
+  height: 4rem;
+  background: #000;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.3s cubic-bezier(0.95, 0.32, 0.37, 1.21);
+}
+
+.icon-link:hover::before {
+  transform: scale(1);
+}
+
+.icon-item:nth-child(1) a:hover:before {
+  background: black;
+}
+
+.icon-item:nth-child(2) a:hover:before {
+  background: black;
+}
+
+.icon-item:nth-child(4) a:hover:before {
+  background: black;
+}
+
+.icon-item:nth-child(5) a:hover:before {
+  background: black;
+}
