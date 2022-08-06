@@ -19,32 +19,68 @@ a:active {
   text-decoration: none;
 }
 
-/* NAV BAR SECTION */
-.nav-link {
-  font-family: "Poppins";
-  color: white;
-  font-weight: bold;
+/* NAVBAR SECTION */
+
+.nav-link{
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;}
+
+.nav-link:hover{
+        color: rgb(0, 0, 0);
+        background-color: white;
+
+    }
+
+
+.navBarImage{
+    width: 10%;
 }
 
-.navBarImage {
-  width: 6%;
+@media (min-width: 768px) {
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
 }
 
 /* HEADER SECTION */
 #headerSection {
   display: grid;
-  height: 100vh;
+  height: 120vh;
   background-color: rgb(43, 43, 43);
   padding: 5% 13% 5%;
 }
 
 .mainTile {
-  width: 1000px;
-  height: 50vh;
+  width: 950px;
+  height: 545px;
+  align-items: center;
+  background-color: rgb(43, 43, 43);
+  border: none;
 }
 
 .ratingsInfo {
   display: flex;
+  padding-bottom: 7px;
+}
+
+.ratingsScore{
+  float: right;
+  display: grid;
+  position: relative;
+  left: 505px;
+}
+
+.yourRatingsScore{
+  float: right;
+  display: grid;
+  position: relative;
+  left: 565px;
 }
 
 .headerTiles {
@@ -53,17 +89,58 @@ a:active {
 
 .leftTile {
   width: 300px;
-  height: 50vh;
-  margin-right: 30px;
-  background-image: url(https://images.g2a.com/1080x1080/1x1x0/red-dead-redemption-2-rockstar-key-global/5da85be37e696c2b755a1612);
-  background-size: cover;
+  height: 545px;
+  margin-left: 30px;
+  background-color: rgb(43, 43, 43);
+  border: none;
+
+}
+
+.buyContainer{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 0.7%;
+}
+
+.steamWidget{
+  margin-right: 15px;
+}
+
+.buyElsewhere{
+  display: grid;
+  margin-left: 10%;
+}
+
+.button-group{
+  margin-bottom: 8%;
+}
+
+.xboxBtn{
+  width: 100%;
+  height: 30%;
+  background-color: rgba(0, 128, 0, 0.753);
+}
+
+.playstationBtn{
+  width: 100%;
+  height: 30%;
+  background-color: rgb(2, 2, 245);
+  margin-bottom: 3%;
+}
+
+.epicGamesBtn{
+  width: 100%;
+  height: 30%;
+  margin-bottom: 3%;
+  background-color: white;
+  color: rgb(43, 43, 43);
 }
 
 /* CONTENT */
 
 #contentBody {
   display: flex;
-  height: 250vh;
+  height: 193vh;
   background-color: white;
   padding: 5% 13% 5%;
 }
@@ -85,6 +162,45 @@ a:active {
 
 .systemSpec {
   display: flex;
+}
+
+/* WHERE YOU CAN PLAY */
+
+.whereToPlay{
+  margin-top: 2% ;
+}
+
+.gameIconBox{
+  display: flex;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+.nintendoImage{
+  width: 10%;
+  height: 10%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.xboxImage{
+  width: 10%;
+  margin-right: 4.5%;
+  margin-top: 5%;
+  margin-left: 1%;
+
+}
+
+.playstationImage{
+  width: 14%;
+  height: 14%;
+  margin-top: 7%;
+}
+
+.desktopImage{
+  width: 10%;
+  margin-right: 5%;
+  margin-top: 5%;
 }
 
 /* VIDEO SECTION */
@@ -143,51 +259,6 @@ tr {
   padding: 4% 4% 4% 4%;
 }
 
-.popUp {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(1.1);
-  transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out,
-    transform 0.25s ease-in-out;
-}
-
-.popupContent {
-  background-color: white;
-  padding: 16px 24px;
-  width: 384px;
-  border-radius: 0.5rem;
-}
-
-.closeButton {
-  float: right;
-  width: 24px;
-  line-height: 24px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  background-color: lightgray;
-}
-
-.closeButton:hover {
-  background-color: darkgray;
-}
-
-.show-popUp {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-}
 
 /* REVIEWS SECTION */
 
@@ -199,8 +270,13 @@ tr {
 .overallReview {
   display: flex;
   height: 40vh;
-  border: #e6412e;
-  border-style: solid;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  border: 3px solid ; 
+}
+
+.overallReviewPercentage{
+  margin: 25px;
 }
 
 .mainReviewPoints {
@@ -210,11 +286,12 @@ tr {
 }
 
 .writeReview {
-  margin-left: 20%;
+  margin-left: 10%;
+  margin: 25px;
 }
 
 .reviewBtn {
-  margin-top: 40%;
+  margin-top: 20%;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
@@ -240,9 +317,7 @@ tr {
 }
 
 @media (min-width: 768px) {
-  .box3button,
-  .box1button,
-  .box2button {
+  .reviewBtn {
     padding: 0.25em 0.75em;
   }
 }
@@ -263,28 +338,113 @@ tr {
 
 #moreLike {
   padding: 0% 13% 5%;
-  height: 100vh;
+  height: 85vh;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > #moreLike {
+        display: none;
+    }
+    .carousel-inner .carousel-item > #moreLike:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+} 
+
+.carousel-control-next, .carousel-control-prev{
+  width: 5%;
+}
+
+.moreLikeThisCarousel{
+  padding-top: 2%;
+  padding-left: 3%;
 }
 
 /* CARDS SECTION */
 
 .card1 {
+  height: 50vh;
+  width: 280px;
+  background-image: url(https://i.gyazo.com/9b47d0e7ec217f9d5a5e38eecab9eb4d.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
 }
 
 .card2 {
-  height: 65vh;
-  width: 400px;
+  height: 50vh;
+  width: 280px;
   background-image: url(https://d2x08bnoa3twn6.cloudfront.net/wp-content/uploads/2016/10/theVideoGameGallery_19740_1525x1887.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
 }
 
 .card3 {
-  height: 65vh;
-  width: 400px;
-  background-image: url(https://static.wikia.nocookie.net/gtawiki/images/7/76/CoverArt-GTAV.png/revision/latest?cb=20220111185712);
+  height: 50vh;
+  width: 280px;
+  background-image: url(https://images.ctfassets.net/wn7ipiv9ue5v/573sV0kiTALMbBfR1vDfTm/fcd4104d2500ccf296c2c7ad1782ebce/GTAIV_Hero_Character_1920x1080.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+}
+
+.card4{
+  height: 50vh;
+  width: 280px;
+  background-image: url(https://venturebeat.com/wp-content/uploads/2021/07/witcher-3-next-gen.jpg?fit=1920%2C1080&strip=all);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+}
+
+.card5{
+  height: 50vh;
+  width: 280px;
+  background-image: url(https://sm.ign.com/t/ign_in/screenshot/default/untitled-design-88_3f7d.1280.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+
+}
+
+.card6{
+  height: 50vh;
+  width: 280px;
+  background-image: url(https://assets.vg247.com/current//2016/06/the_legend_of_zelda_breath_of_the_wild_e3_2016_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
 }
 
 /* FOOTER SECTION */
@@ -375,4 +535,16 @@ tr {
 
 .icon-item:nth-child(5) a:hover:before {
   background: black;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.backToTop{
+  background-color: #e6412e;
 }
