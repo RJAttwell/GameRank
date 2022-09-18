@@ -1,0 +1,458 @@
+body{
+    background-color: rgb(65, 65, 65);
+}
+
+/* LINKS */
+/* Removes text decoration (underlines) from links */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* NAVBAR SECTION */
+
+.dropdownMenu{
+  margin-left: 15px;
+}
+
+.nav-link{
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;}
+
+.nav-link:hover{
+        color: rgb(0, 0, 0);
+        background-color: white;
+
+    }
+
+
+.navBarImage{
+    width: 10%;
+}
+
+@media (min-width: 768px) {
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+/* PROFILE INFORMATION SECTION */
+
+#profileBody{
+    padding: 5% 16% 0%;
+}
+
+.profilePicture{
+    width: 15%;
+}
+
+.profileInfo{
+    display: flex;
+}
+
+.info{
+  margin-left: 3%;
+}
+
+.profileText{
+  font-family: 'Poppins';
+  color: white;
+}
+
+#profileActivity{
+    padding: 3% 16%;
+}
+
+.linkBtn {
+  margin-top: 2%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: white;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.linkBtn:active, .infoBtn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .linkBtn, .infoBtn {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.infoBtn {
+  margin-top: 2%;
+  float: right;
+  height: 8vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: white;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* SOCIAL MEDIA LINKS */
+
+.socialMediaLinks{
+  padding: 5% 16% 0%;
+  display: flex;
+}
+
+.twitterIcon, .youtubeIcon{
+  width: 5%;
+}
+
+/* RATINGS SECTION */
+
+.ratings{
+    margin-bottom: 5%;
+}
+
+.ratingsHeaderText{
+    font-family: 'Poppins';
+    color: white;
+    margin-bottom: 2%;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.ratingsCard1{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/Q4mGRFxL6vBvbzXgzWP83M.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+.ratingsCard2{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/x5GaA4GkehF4fUQjTExNoZ.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+.ratingsCard3{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://assets2.ignimgs.com/2014/11/17/gta-v-bigjpg-e94b8d1280wjpg-e14d62_160w.jpg?width=1280);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+.ratingsCard4{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://eloboostreviews.com/wp-content/uploads/2022/07/3680129-valorant-review-in-progress-promothumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+/* GENRE SECTION */
+
+.genres{
+    margin-bottom: 5%;
+}
+
+.genresHeaderText{
+    font-family: 'Poppins';
+    color: white;
+    margin-bottom: 2%;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.card-title{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.cardBtn {
+  margin-top: 30%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: white;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.cardBtn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .cardBtn {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.genreCard1{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/best-modern-jrpgs-tales-of-arise-yakuza-lika-a-dragon-smt-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+.genreCard2{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://gameranx.com/wp-content/uploads/2015/05/4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+.genreCard3{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://cdn.wccftech.com/wp-content/uploads/2020/01/best_platformers_decade.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+.genreCard4{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://pagegoo.com/wp-content/uploads/2022/06/1654891961_1280x720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+/* PLAYLIST SECTION */
+
+.playlist{
+    margin-bottom: 5%;
+}
+
+.playlistHeaderText{
+    font-family: 'Poppins';
+    color: white;
+    margin-bottom: 2%;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.playlistCard1{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://gamingbolt.com/wp-content/uploads/2020/09/aragami-2-image-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+.playlistCard2{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/05/Kiryu-Kazuma-in-Yakuza-0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+.playlistCard3{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2018/04/17/4b4d65c5-88b8-4b0a-9e9d-3187793f897b/god-of-war-screenshot);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+.playlistCard4{
+    height: 22vh;
+    width: 100%;
+    background-image: url(https://i.ytimg.com/vi/9xj4ciP0Riw/maxresdefault.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+/* FOOTER SECTION */
+
+:root {
+  --bg: #dcdde1;
+  --color-icon: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.socialButtons {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6412e;
+}
+
+.icon-list {
+  width: 50%;
+  max-width: 25rem;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.icon-item {
+  list-style: none;
+}
+
+.icon-link {
+  display: inline-flex;
+  font-size: 2rem;
+  color: var(--color-icon);
+  width: 4rem;
+  height: 4rem;
+  transition: 0.5s linear;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+
+.icon-link:hover {
+  color: #fff;
+}
+
+.icon-link i {
+  margin: auto;
+}
+
+.icon-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 4rem;
+  height: 4rem;
+  background: #000;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.3s cubic-bezier(0.95, 0.32, 0.37, 1.21);
+}
+
+.icon-link:hover::before {
+  transform: scale(1);
+}
+
+.icon-item:nth-child(1) a:hover:before {
+  background: black;
+}
+
+.icon-item:nth-child(2) a:hover:before {
+  background: black;
+}
+
+.icon-item:nth-child(4) a:hover:before {
+  background: black;
+}
+
+.icon-item:nth-child(5) a:hover:before {
+  background: black;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.backToTop{
+  background-color: #e6412e;
+}
+
