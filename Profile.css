@@ -61,6 +61,7 @@ a:active {
 
 .profilePicture{
     width: 15%;
+    border: 2px solid black;
 }
 
 .profileInfo{
@@ -78,6 +79,10 @@ a:active {
 
 #profileActivity{
     padding: 3% 16%;
+}
+
+.nationalFlag{
+  width: 7%;
 }
 
 .linkBtn {
@@ -114,8 +119,9 @@ a:active {
 
 .infoBtn {
   margin-top: 2%;
+  margin-left: 15%;
   float: right;
-  height: 8vh;
+  height: 5vh;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
@@ -137,12 +143,19 @@ a:active {
 /* SOCIAL MEDIA LINKS */
 
 .socialMediaLinks{
-  padding: 5% 16% 0%;
+  padding: 2% 16% 0%;
+}
+
+.socialIcons{
   display: flex;
 }
 
-.twitterIcon, .youtubeIcon{
+.twitterIcon, .twitchIcon{
   width: 5%;
+}
+
+.youtubeIcon{
+  width: 8%;
 }
 
 /* RATINGS SECTION */
