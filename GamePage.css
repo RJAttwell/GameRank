@@ -144,7 +144,7 @@ a:active {
 
 #contentBody {
   display: flex;
-  height: 193vh;
+  height: 175vh;
   background-color: white;
   padding: 5% 13% 5%;
 }
@@ -181,29 +181,25 @@ a:active {
 }
 
 .nintendoImage{
-  width: 10%;
-  height: 10%;
-  margin-right: 5%;
+  width: 80%;
   margin-top: 5%;
 }
 
 .xboxImage{
-  width: 10%;
-  margin-right: 4.5%;
+  width: 100%;
   margin-top: 5%;
-  margin-left: 1%;
+
 
 }
 
 .playstationImage{
-  width: 14%;
+  width: 50%;
   height: 14%;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 .desktopImage{
-  width: 10%;
-  margin-right: 5%;
+  width: 100%;
   margin-top: 5%;
 }
 
@@ -211,6 +207,10 @@ a:active {
 
 .container{
     justify-content: center;
+}
+
+.videoCard{
+  margin-right: 10px;
 }
 
 /* CONTENT RIGHT SIDE */
@@ -593,3 +593,4 @@ tr {
 .backToTop{
   background-color: #e6412e;
 }
+

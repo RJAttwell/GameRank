@@ -64,6 +64,24 @@ a:active {
 
 .Header{
   padding: 2% 5%;
+  display: flex;
+}
+
+.headerWriting{
+  margin-right: 65%;
+}
+
+.shareIcon{
+  font-size: 200%;
+  float: right;
+  padding-top: 1%;
+}
+
+.editIcon{
+  float: right;
+  font-size: 200%;
+  margin-right: 5%;
+  padding-top: 1%;
 }
 
 .titles{
@@ -87,6 +105,10 @@ a:active {
 
 .headerText{
   font-family: 'Poppins';
+}
+
+.sortBy{
+  padding: 0% 5%;
 }
 
 /* FOOTER SECTION */

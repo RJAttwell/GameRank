@@ -103,11 +103,15 @@ h2{
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
+.dropdownMenu{
+    margin-left: 15px;
+  }
+
 /* MAIN TITLE SECTION */
 
 #title {
     display: flexbox;
-    height: 95vh;
+    height: 100vh;
     padding-top: 3.4%;
     background-color: rgb(44, 44, 44);
 }
@@ -170,16 +174,35 @@ a:hover{
         padding: 0.25em 0.75em;
     }
 }
+
 /* NAVBAR SECTION */
 
 .nav-link{
-    font-family: 'Poppins';
     color: white;
     font-weight: bold;
-}
+    margin-right: 10px;}
+
+.nav-link:hover{
+        color: rgb(0, 0, 0);
+        background-color: white;
+
+    }
+
+
 .navBarImage{
-    width: 6%;
-    transform: skewX(-15deg)
+    width: 10%;
+    transform: skewX(0deg)
+}
+
+@media (min-width: 768px) {
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
 }
 
 /* OUT NOW SECTION */
@@ -188,30 +211,39 @@ a:hover{
     background-color: #e6412f;
     display: grid;
     height: 85vh;
+    padding: 5% 10%;;
     justify-content: center;
 }
 
 .newReleases {
-    margin-top: 1%;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .newReleasesText {
-    position: relative;
+    font-family: 'Poppins';
     font-weight: bold;
     color: #ffffff;
-    font-size: 40px;
-    margin-top: 4%;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 4%;
+    font-size: 25px;
+    color: black;
+}
+
+/* EDITOR'S PICKS SECTION */
 
 #editorsPicks {
     background-color: #e6412f;
     display: grid;
     padding: 7% 10%;
-    height: 900px;
+    height: 1100px;
 }
 
 .editorimage {
-    max-width: 800px;
+    max-width: 950px;
     height: auto;
     transition: 0.5s ease;
     cursor: pointer;
@@ -219,7 +251,7 @@ a:hover{
 }
 
 .editorimage:hover {
-    transform: scale(1.07);
+    transform: scale(1.02);
 }
 
 .editText{
@@ -235,100 +267,136 @@ a:hover{
     background-color: #e6412f;
     display: flex;
     justify-content: center;
-    height: 20vh;
+    height: 30vh;
     align-items: center;
-    padding: 1% 15%;
+    padding: 1% 15% 7%;
+}
+
+.lookingText{
+    font-weight: bolder;
+    color: white;
 }
 
 /* UPCOMING GAMES SECTION */
 
 #UpcomingGames {
-    margin-top: -100px;
     background-color: #e6412f;
-    display: grid;
-    height: 120vh;
+    height: 100vh;
     place-items: center;
-}
-
-.upcomingGamesCara{
-    margin-top: -200px;
 }
 
 .upcomingText{
     font-family: 'Poppins';
-    position: relative;
-    margin-top: 150px;
+    margin-bottom: 90px;
     color: white;
     font-weight: bold;
 }
 
-/* CONTACT ME SECTION */
-
-#ContactMe {
-    background-color: #ffffff;
-    height: 200px;
-    margin: auto;
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > #moreLike {
+        display: none;
+    }
+    .carousel-inner .carousel-item > #moreLike:first-child {
+        display: block;
+    }
 }
 
-.contactbuttons{
-    position: relative;
-    top: 100px;
-}
-
-.contactList {
-    margin: 0;
-    padding: 0;
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-.contactList .contactItem {
-    list-style: none;
-    margin: 0 15px;
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
 }
 
-.contactList .contactItem a {
-    position: relative;
-    display: block;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 63px;
-    background: #333;
-    border-radius: 50%;
-    font-size: 30px;
-    color: #666;
-    transition: .5s;
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+} 
+
+.carousel-control-next, .carousel-control-prev{
+  width: 5%;
 }
 
-.contactList .contactItem a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: #e6412f;
-    transition: .5s;
-    transform: scale(.9);
-    z-index: -1;
+.upcomingGamesCarousel{
+  padding-top: 2%;
+  padding-left: 3%;
 }
 
-.contactList .contactItem a:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #e6412f;
+/* CARDS SECTION */
+
+.upcomingCard1 {
+  height: 50vh;
+  width: 280px;
+  background-image: url(https://i.gyazo.com/9b47d0e7ec217f9d5a5e38eecab9eb4d.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
 }
 
-.contactList .contactItem a:hover {
-    color: #e6412f;
-    box-shadow: 0 0 5px #e6412f;
-    text-shadow: 0 0 5px #e6412f;
+.upcomingCard2 {
+  height: 50vh;
+  width: 280px;
+  background-image: url(https://d2x08bnoa3twn6.cloudfront.net/wp-content/uploads/2016/10/theVideoGameGallery_19740_1525x1887.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
 }
 
+.upcomingCard3 {
+  height: 50vh;
+  width: 280px;
+  background-image: url(https://images.ctfassets.net/wn7ipiv9ue5v/573sV0kiTALMbBfR1vDfTm/fcd4104d2500ccf296c2c7ad1782ebce/GTAIV_Hero_Character_1920x1080.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+}
+
+.upcomingCard4{
+  height: 50vh;
+  width: 280px;
+  background-image: url(https://venturebeat.com/wp-content/uploads/2021/07/witcher-3-next-gen.jpg?fit=1920%2C1080&strip=all);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+}
+
+.upcomingCard5{
+  height: 50vh;
+  width: 280px;
+  background-image: url(https://sm.ign.com/t/ign_in/screenshot/default/untitled-design-88_3f7d.1280.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+
+}
+
+.upcomingCard6{
+  height: 50vh;
+  width: 280px;
+  background-image: url(https://assets.vg247.com/current//2016/06/the_legend_of_zelda_breath_of_the_wild_e3_2016_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+}
 
 
 /* CARD 1 */
@@ -343,7 +411,6 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-    font-family: roboto;
     text-align: center;
 
     transition: 0.5s ease;
@@ -370,7 +437,6 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-    font-family: roboto;
     text-align: center;
 
     transition: 0.5s ease;
@@ -391,7 +457,6 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-    font-family: roboto;
     text-align: center;
 
     transition: 0.5s ease;
@@ -433,7 +498,6 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-    font-family: roboto;
     text-align: center;
 
     transition: 0.5s ease;
@@ -455,7 +519,6 @@ a:hover{
     background-size: cover;
     background-position: center;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-    font-family: roboto;
     text-align: center;
 
     transition: 0.5s ease;
@@ -790,5 +853,76 @@ a:hover{
 .retrocard5:hover, .retrocard6:hover{
     transform: scale(1.05);
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* CONTACT ME SECTION */
+
+#ContactMe {
+    display: grid;
+    background-color: #ffffff;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.contactbuttons{
+    position: relative;
+    top: 10px;
+    margin-bottom: 20px;
+}
+
+.contactList {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contactList .contactItem {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.contactList .contactItem a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+}
+
+.contactList .contactItem a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #e6412f;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.contactList .contactItem a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #e6412f;
+}
+
+.contactList .contactItem a:hover {
+    color: #e6412f;
+    box-shadow: 0 0 5px #e6412f;
+    text-shadow: 0 0 5px #e6412f;
 }
 

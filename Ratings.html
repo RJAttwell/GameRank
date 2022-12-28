@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Playlist</title>
+    <title>Your Ratings</title>
 
     <!-- Fav Icon -->
     <link rel="Icon" type="image/x-icon" href="android-chrome-192x192.png" />
@@ -23,7 +23,7 @@
     <script src="https://kit.fontawesome.com/e62681f8e0.js" crossorigin="anonymous"></script>
 
     <!-- Add CSS  -->
-    <link rel="stylesheet" href="Ratings.css" />
+    <link rel="stylesheet" href="Playlist.css" />
 
     <!-- Google Fonts and Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +53,7 @@
                         <a class="nav-link" href="#">Explore</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Retro</a>
+                        <a class="nav-link" href="Retro.html">Retro</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
@@ -88,10 +88,29 @@
         <div class="container1">
 
             <div class="Header">
-                <h1 class="headerText">Your Playlist</h1>
-                <p>
-                    [NUM] Titles
-                </p>
+                <div class="headerWriting">
+                    <h1 class="headerText">Your Ratings</h1>
+                    <p style="font-family: 'Poppins'; color: rgb(168, 168, 168);">
+                        [NUM] Titles
+                    </p>
+                </div>
+
+                <a class="editIcon" href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a class="shareIcon" href=""><i class="fa-solid fa-share"></i></a>
+
+
+            </div>
+
+            <div class="sortBy">
+                <form action="/action_page.php">
+                    <label style="padding-right: 1%;" for="sortBy">Sort by: </label>
+                    <select name="sortByOptions" id="sortByOptions">
+                        <option value="alphabetical">Alphabetical</option>
+                        <option value="GRRating">Game Rank Rating</option>
+                        <option value="releaseDate">Release Date</option>
+                        <option value="dateAdded">Date Added</option>
+                        <option value="userRating">Your Rating</option>
+                    </select>
 
             </div>
 
@@ -108,7 +127,9 @@
                                 <h6 class="card-title">God of War Ragnarok</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2022</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> 97 </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> 97 </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> 93 </p>
                                 </div>
 
                             </div>
@@ -123,7 +144,9 @@
                                 <h6 class="card-title">Hogwarts Legacy</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2023</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +160,9 @@
                                 <h6 class="card-title">Star Wars Jedi Survivor</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2023</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +176,9 @@
                                 <h6 class="card-title">Tears of the Kingdom</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2023</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +192,9 @@
                                 <h6 class="card-title">Alan Wake II</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2023</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +208,9 @@
                                 <h6 class="card-title">Skull and Bones</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2023</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +224,9 @@
                                 <h6 class="card-title">Street Fighter 6</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2023</p>
-                                    <p>IGN </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> ?</p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +239,9 @@
                                 <h6 class="card-title">Assassin's Creed Mirage</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2023</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> ?</p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> ?</p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +255,9 @@
                                 <h6 class="card-title">Super Smash Bros Ultimate</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2018</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> 96 </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> 96 </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +271,9 @@
                                 <h6 class="card-title">Wo Long: Fallen Dynasty</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2023</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +287,9 @@
                                 <h6 class="card-title">Dishonored 2</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2016</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> 94 </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> 94 </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +303,9 @@
                                 <h6 class="card-title">Dead Island 2</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2023</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -276,7 +319,9 @@
                                 <h6 class="card-title">Call of Duty Modern Warfare II</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2022</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> 89 </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> 89 </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -290,7 +335,9 @@
                                 <h6 class="card-title">Tony Hawk's Pro Skater</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2020</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> 94 </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> 94 </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -304,7 +351,9 @@
                                 <h6 class="card-title">Kerbal Space Program 2</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2023</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +367,9 @@
                                 <h6 class="card-title">Black Myth: Wukong</h6>
                                 <div class="scores">
                                     <p class="releaseYear">2023</p>
-                                    <p style="color: rgb(0, 107, 247);"><i class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(0, 107, 247); padding-right: 15%;"><i
+                                            class="fa-solid fa-star"></i> ? </p>
+                                    <p style="color: rgb(247, 16, 0);"><i class="fa-solid fa-star"></i> ? </p>
                                 </div>
                             </div>
                         </div>
@@ -333,6 +384,28 @@
 
 
     </section>
+
+    <footer id="footer">
+        <section class="socialButtons">
+            <ul class="icon-list">
+                <li class="icon-item">
+                    <a href="#" class="icon-link"><i class="fa-solid fa-inbox"></i></a>
+                </li>
+
+                <li class="icon-item">
+                    <a href="https://github.com/RJAttwell" class="icon-link"><i class="fab fa-github"></i></a>
+                </li>
+
+                <li class="icon-item">
+                    <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+                </li>
+
+                <li class="icon-item">
+                    <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+        </section>
+    </footer>
 
 </body>
 
