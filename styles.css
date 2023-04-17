@@ -103,10 +103,6 @@ h2{
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
-.dropdownMenu{
-    margin-left: 15px;
-  }
-
 /* MAIN TITLE SECTION */
 
 #title {
@@ -211,7 +207,6 @@ a:hover{
     background-color: #e6412f;
     display: grid;
     height: 85vh;
-    padding: 5% 10%;;
     justify-content: center;
 }
 
@@ -224,6 +219,9 @@ a:hover{
     font-family: 'Poppins';
     font-weight: bold;
     color: #ffffff;
+    font-size: 4rem;
+    margin-left: 35%;
+    margin-top: 4%;
 }
 
 .carousel-control-prev,
@@ -239,7 +237,7 @@ a:hover{
     background-color: #e6412f;
     display: grid;
     padding: 7% 10%;
-    height: 1100px;
+    height: 900px;
 }
 
 .editorimage {
@@ -267,29 +265,17 @@ a:hover{
     background-color: #e6412f;
     display: flex;
     justify-content: center;
-    height: 30vh;
+    height: 20vh;
     align-items: center;
-    padding: 1% 15% 7%;
-}
-
-.lookingText{
-    font-weight: bolder;
-    color: white;
+    padding: 1% 15%;
 }
 
 /* UPCOMING GAMES SECTION */
 
 #UpcomingGames {
     background-color: #e6412f;
-    height: 100vh;
+    height: 120vh;
     place-items: center;
-}
-
-.upcomingText{
-    font-family: 'Poppins';
-    margin-bottom: 90px;
-    color: white;
-    font-weight: bold;
 }
 
 @media (max-width: 767px) {

@@ -1,0 +1,31 @@
+{
+  "name": "game-rank-site-project",
+  "version": "1.0.0",
+  "description": "GameRank",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RJAttwell/GameRank.git"
+  },
+  "author": "Richard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RJAttwell/GameRank/issues"
+  },
+  "homepage": "https://github.com/RJAttwell/GameRank#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.0.3",
+    "mongoose-findorcreate": "^4.0.0",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local-mongoose": "^8.0.0"
+  }
+}
